@@ -1,0 +1,179 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-family: font-family: 'Signika Negative', sans-serif;
+}
+
+.plants {
+    display: flex;
+    align-items: center;
+    background-color: #fee3e3;
+}
+
+/* LADO DIREITO */
+.plants-right {
+      background-color: #408b28;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+
+    margin: 0 5rem;
+
+    height: 95vh;
+    width: 46vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTO */
+.plants-right-text {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #ffefef;
+}
+
+.plants-right-text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+.plants-right-text p {
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+/* IMAGEM */
+.plants-right-img {
+    padding-top: 4rem;
+    max-width: 38rem;
+}
+
+/* LADO ESQUERDO */
+.plants-left {
+    background: #fff;
+    color: #16182c;
+    
+    height: 100vh;
+    width: 50vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORMULÁRIO */
+.plants-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plants-right h2 {
+    font-size: 3rem;
+}
+
+.plants-form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+        width: 40rem;
+}
+
+.form-item{
+    padding-top: 4rem;
+}
+
+/* E-MAIL E SENHA */
+.form-item label:not(.checkbox label) {
+    background-color: #fff;
+    display: inline-block;
+    
+    position: absolute;
+    padding: 0 1rem;
+    transform: translate(2rem, -1rem);
+    font-size: 1.4rem; 
+    font-weight: 600;
+}
+
+input[type='email'],
+input[type='password'] {
+    border: 1px solid #16182c;
+    height: 3rem;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+}
+
+/* CHECKBOX E ESQUECEU A SENHA */
+.form-item-checkbox{
+    font-size: 1.4rem;
+font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.form-item-checkbox a {
+    text-decoration: none;
+    color: #16182c;
+  }
+
+  .form-item-checkbox a:hover {
+    color: #c01f45;
+  }
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: #d7395e;
+}
+
+/* BOTÃO */
+button {
+    background-color: #d7395e;
+    background-color: #408b28;
+    color: #fff;
+    
+    height: 3rem;
+
+    
+    border: none;
+    border-radius: 10rem;
+    
+    
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5ab83b;
+    transform: translateY(-3%);
+}
