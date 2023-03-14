@@ -15,22 +15,27 @@ body {
     font-family: font-family: 'Signika Negative', sans-serif;
 }
 
-.plants {
-    display: flex;
-    align-items: center;
-    background-color: #fee3e3;
+#img-mobile {
+    display: none;
 }
 
-/* LADO DIREITO */
+.plants {
+    background-color: #fee3e3;
+
+    display: flex;
+    align-items: center;
+}
+
+/* ----- LADO DIREITO ----- */
 .plants-right {
-      background-color: #408b28;
+    background-color: #408b28;
     border-bottom-right-radius: 60%;
     border-bottom-left-radius: 60%;
 
-    margin: 0 5rem;
-
     height: 95vh;
     width: 46vw;
+    margin: 0 5rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,36 +44,37 @@ body {
 
 /* TEXTO */
 .plants-right-text {
-    text-align: center;
-    padding-bottom: 2rem;
     color: #ffefef;
+    text-align: center;
+
+    padding-bottom: 2rem;
 }
 
 .plants-right-text h1 {
     font-family: 'Pacifico', cursive;
     font-size: 4rem;
-    letter-spacing: .5rem;
+    letter-spacing: .7rem;
 }
 
 .plants-right-text p {
-    font-size: 3rem;
-    padding-top: 2rem;
+    font-size: 2.3rem;
+    padding-top: 1rem;
 }
 
 /* IMAGEM */
 .plants-right-img {
-    padding-top: 4rem;
     max-width: 38rem;
+    padding-top: 4rem;
 }
 
-/* LADO ESQUERDO */
+/* ----- LADO ESQUERDO ----- */
 .plants-left {
     background: #fff;
     color: #16182c;
-    
+
     height: 100vh;
     width: 50vw;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,62 +89,69 @@ body {
     align-items: center;
 }
 
-.plants-right h2 {
+.plants-left h2 {
     font-size: 3rem;
 }
 
 .plants-form {
+    width: 40rem;
+
     display: flex;
     flex-direction: column;
-    /* gap: 3rem; */
-        width: 40rem;
 }
 
-.form-item{
+.form-item {
     padding-top: 4rem;
 }
 
 /* E-MAIL E SENHA */
 .form-item label:not(.checkbox label) {
     background-color: #fff;
-    display: inline-block;
-    
-    position: absolute;
-    padding: 0 1rem;
-    transform: translate(2rem, -1rem);
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-weight: 600;
+
+    padding: 0 1rem;
+
+    display: inline-block;
+
+    position: absolute;
+    transform: translate(2rem, -1rem);
 }
 
 input[type='email'],
 input[type='password'] {
-    border: 1px solid #16182c;
-    height: 3rem;
-    padding: 1.5rem 2rem;
-    width: 100%;
-    outline: none;
-    transition: background .5s;
     font-size: 1.5rem;
+    outline: none;
+
+    border: 1px solid #16182c;
     border-radius: 10rem;
+
+    height: 3rem;
+    width: 100%;
+    padding: 1.5rem 2rem;
+
+    transition: background .5s;
 }
 
 /* CHECKBOX E ESQUECEU A SENHA */
-.form-item-checkbox{
+.form-item-checkbox {
     font-size: 1.4rem;
-font-weight: 500;
+    font-weight: 500;
+
+    padding: 1rem 1.5rem 3rem 1.5rem;
+
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1.5rem 3rem 1.5rem;
 }
 
 .form-item-checkbox a {
-    text-decoration: none;
     color: #16182c;
-  }
+    text-decoration: none;
+}
 
-  .form-item-checkbox a:hover {
+.form-item-checkbox a:hover {
     color: #c01f45;
-  }
+}
 
 .checkbox {
     display: flex;
@@ -148,29 +161,27 @@ font-weight: 500;
 }
 
 input[type='checkbox'] {
+    accent-color: #d7395e;
+
     width: 1.5rem;
     height: 1.5rem;
-    accent-color: #d7395e;
 }
 
 /* BOTÃO */
 button {
-    background-color: #d7395e;
     background-color: #408b28;
     color: #fff;
-    
-    height: 3rem;
 
-    
-    border: none;
-    border-radius: 10rem;
-    
-    
     font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+
+    height: 3rem;
+
+    border: none;
+    border-radius: 10rem;
 }
 
 button:hover {

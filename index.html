@@ -13,21 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Signika+Negative:wght@300;500;600&display=swap"
         rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mediaqueries.css">
 </head>
 
 <body>
     <section class="plants">
-
-
-
         <section class="plants-left">
 
             <div class="plants-form-content">
                 <h2>Faça o seu login</h2>
 
+                <!-- FORMULÁRIO -->
                 <form class="plants-form" action="">
-
                     <div class="form-item">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required>
@@ -43,17 +41,14 @@
                             <input type="checkbox" id="lembrar-me" name="lembrar-me">
                             <label for="lembrar-me">Lembrar-me da senha</label>
                         </div>
-                        
+
                         <a href="#">Esqueceu a senha?</a>
                     </div>
 
-
-
-
+                    <!-- BOTÃO -->
                     <button type="submit">Entrar</button>
                 </form>
             </div>
-
         </section>
 
         <section class="plants-right">
@@ -61,10 +56,14 @@
                 <h1>Bem-vindo ao Plants</h1>
                 <p>Seu catálogo de plantas online. Divirta-se!</p>
             </div>
-            <img class="plants-right-img" src="./assets/page1.png" alt="">
+
+            <img id="img-desktop" class="plants-right-img" src="./assets/page1.png" alt="ilustração de uma mulher regando as plantas">
+            <img id="img-mobile" class="plants-right-img" src="./assets/mobile.png" alt="ilustração de uma mulher regando as plantas">
         </section>
 
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
